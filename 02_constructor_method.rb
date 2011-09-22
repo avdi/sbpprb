@@ -15,6 +15,7 @@ class Point
   end
 end
 
+# From dbrock:
 # Except you could actually do this:
 
 def Point(options)
