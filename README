@@ -1,2 +1,9 @@
 My attempts at translating the code samples in Smalltalk Best Practice
 Patterns into Ruby code.
+
+You really need a copy of the book for context if you're going to read these:
+http://www.amazon.com/Smalltalk-Best-Practice-Patterns-Kent/dp/013476904X/
+
+On collaboration: so, this is kind of a personal exercise for me; I want to work through the patterns and come to my own interpretation. That said, I'm also *very* interested in other people's takes on the patterns. And I think it would be cool to put different takes side-by-side.
+
+So feel free to fork this, and if you have a different idea on how a pattern should be translated, add it into the file with commentary (don't replace the existing content) and send me a pull request.
