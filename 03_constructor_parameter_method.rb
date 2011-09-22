@@ -29,7 +29,7 @@ class Point
   attr_accessor :x, :y
 
   def self.new(x, y)
-    new.set(x: x, y: y)
+    allocate.set(x: x, y: y)
   end
   
   def set(options={})
