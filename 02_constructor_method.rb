@@ -14,3 +14,15 @@ class Point
     end
   end
 end
+
+# Except you could actually do this:
+
+def Point(options)
+  Point.new_polar(options[:r], options[:theta])
+end
+
+# And then with Ruby 1.9 you could call it like this:
+#
+#  Point r: a, theta: b
+#
+# :DDDDD
