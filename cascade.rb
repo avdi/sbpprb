@@ -2,9 +2,9 @@
 # object using the semicolon (;) operator. E.g.:
 #
 #   aStream
-#       print x;
-#       nextPutOn ' @ ';
-#       print y
+#       print: x;
+#       nextPutOn: ' @ ';
+#       print: y
 #
 # If I understand it correctly, the semicolon is effectively a
 # K-combinator or "Kestrel" (see
