@@ -16,8 +16,8 @@
 x, y = 23, 32
 
 $stdout.tap do |s| 
-  s.print x     end.tap do |s| 
-  s.print ' @ ' end.tap do |s| 
+  s.print x
+  s.print ' @ '
   s.print y
 end
 
