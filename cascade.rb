@@ -21,6 +21,10 @@ $stdout.tap do |s|
   s.print y
 end
 
+# Note: Yes, I could use a single tap for all three calls, but I'm
+# trying to exactly mimic the semantics of Smalltalk's ';' operator as
+# used in the example above.
+
 puts
 
 # Let's see if we can do better for this simple case of cascading a
