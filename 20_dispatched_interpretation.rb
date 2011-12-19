@@ -39,14 +39,12 @@ class TrueClass
 end
 
 class FalseClass
-  FALSE_PROXY = Object.new.tap do |o|
-    def o.if_false
-      yield
-    end
+  def if_true
+    self
   end
 
-  def if_true
-    FALSE_PROXY
+  def if_false
+    yield
   end
 end
 
