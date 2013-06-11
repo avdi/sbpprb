@@ -27,3 +27,22 @@ end
 #  Point r: a, theta: b
 #
 # :DDDDD
+
+# jacobthemyth
+#   Point.new x: x, y: y
+#   Point.new r: r, theta: t
+class Point
+  attr_reader :x, :y
+
+  def self.new(options)
+    allocate.tap do |p|
+      begin
+        p.x = options.fetch(:x)
+        p.y = options.fetch(:y)
+      rescue KeyError
+        p.x = options[:r] * Math.cos(options[:theta])
+        p.y = options[:r] * Math.sin(options[:theta])
+      end
+    end
+  end
+end
